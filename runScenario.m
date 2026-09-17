@@ -122,6 +122,9 @@ function results = runScenario(scenarioName, mapSize, staticObstacleBoxes, ...
         stepsToComplete = maxSteps;
     end
 
+
+
+
     % --- Package results ---
     results.scenarioName = scenarioName;
     results.goalReached = goalReached;
@@ -133,4 +136,5 @@ function results = runScenario(scenarioName, mapSize, staticObstacleBoxes, ...
     results.maxReplanLatencyMs = max(dwaCallTimes) * 1000;
     results.avgHeadingChangePerStep = mean(headingChanges);
     results.poseHistory = poseHistory;
+    
 end
